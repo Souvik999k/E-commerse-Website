@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urgift</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-fluid login">
+        <div class="d-flex">
+            <div class="image">
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                <img src="public/images/pic-blur.png" alt="pic-blur"class="img-fluid">
+                </div>
+                <div class="carousel-item ">
+                    <img src="public/images/pic-blur2.png" alt="pic-blur"class="img-fluid">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="public/images/pic-blur3.png" alt="pic-blur"class="img-fluid">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="public/images/pic-blur4.png" alt="pic-blur"class="img-fluid">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="public/images/pic-blur5.png" alt="pic-blur"class="img-fluid">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="public/images/pic-blur6.png" alt="pic-blur"class="img-fluid">
+                                    </div>
+            </div>
+        </div>
+            </div>
+     <div class="bg"></div>
+        </div>
+        <div class="container middle">
+            <div class="row">
+                 <div class="col-md-6 pic">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                    <img src="public/images/main-pic1.png" alt="pic1"class="img-fluid">
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="public/images/main-pic2.png" alt="pic1"class="img-fluid">
+                                  </div>
+                                  <div class="carousel-item ">
+                                    <img src="public/images/main-pic3.png" alt="pic1"class="img-fluid">
+                                          </div>
+                                          <div class="carousel-item ">
+                                            <img src="public/images/main-pic4.png" alt="pic1"class="img-fluid">
+                                                  </div>
+                                                  <div class="carousel-item ">
+                                                    <img src="public/images/main-pic55.png" alt="pic1"class="img-fluid">
+                                                          </div>
+                                                          <div class="carousel-item ">
+                                                            <img src="public/images/main-pic6.png" alt="pic1"class="img-fluid">
+                                                                  </div>
+                        </div>
+                    </div>
+                 </div>
+                  <div class="col-md-6 form">
+                    <div class="logo d-flex justify-content-center mb-5">
+                        <img src="public/images/logo.png" alt="logo"class="img-fluid">
+                    </div>
+                    <div class="text1 mx-3">
+                        <h2 class="h2 text-dark ">Discover the</h2>
+                        <h2 class="h2 trend ">latest  Trends Now</h2>
+                    </div>
+                     <form action="/action.php"onsubmit="logIn()">
+                            <div class="i1 mx-4">
+                                <div class="form-floating mt-4 f1" id="input1">
+                                    <input type="text" id="user" name="user"placeholder="UserName" class="form-control border-0 border-bottom bg-transperent rounded"onkeyup="UserInput()">
+                                    <Label for="user">UserName</Label>
+                                    <span class="mt-1 text-danger px-3">UserName is too small</span>
+                                    <span class="mt-1 text-warning px-3 email">Its not an email</span>
+        
+                                </div>
+                                <div class="form-floating mt-4 f1" id="input2">
+                                     <input type="Password" id="user" name="user"placeholder="Password" class="form-control border-0 border-bottom bg-transperent type "onkeyup="PasswordInput()" >
+                                    <Label for="user">Password</Label>
+                                    <div class="eye-on "id="eye-on" onclick="eyeToggle()"><i class="fa-solid fa-eye"></i></div>
+                                    <div class="eye-off"id="eye-off"onclick="eyeToggle()"><i class="fa-solid fa-eye-slash"></i></div>
+                                    <span class="mt-1 text-danger px-3">Password is too small</span>
+                                </div>
+                            </div>
+                           
+<div class="col-md-11 ">
+    <div class="d-grid w-100 mx-4 my-2">
+        <button class="btn btn-dark btn-lg rounded py-3 signin " >
+            Signin
+         </button>
+</div>
+<div class="forgot d-flex justify-content-end mt-3 ">
+    <h6 class="ps-4">
+        Forgot Passward ?
+      </h6>
+</div>
+
+                          
+                                
+        
+                            </div>
+                           
+                        </form>
+                     
+                        <hr class="mt-4"> 
+                        <div class="button-next d-flex justify-content-between">
+                            <div class=" button1 px-5 py-2 text-center b1">
+                               <h4>Sign in</h4>
+                            </div>
+                            <div class=" button1 px-5 py-2 text-center">
+                                <h4>Sign up</h4>
+                             </div>
+                        </div>
+                  </div>     
+
+                  
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

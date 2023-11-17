@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="container-fluid heading">
+        <div class="container">
+            
+                <h1 class="heading fs-2 fw-3 text-light py-4">Your Cart</h1>
+              
+        </div>
+    </div>
+    <div class="container-fluid cart">
+        <div class="container">
+           
+            <div class="row mt-5 justify-content-between">
+                <div class="col-md-6">
+                    <h2>Oder Summery</h2>
+                    <hr>
+                    <div class="c-row">
+                        <div class="c rounded">
+                            <div class="d-flex gap-4 my-4 px-3 py-2 ">
+                                <img src="public/images/cart-product.png" alt="cart1" class="img-fluid">
+                                <div class="text">
+                                    <h5>Raymonds</h5>
+                                    <p class="para">Men Green Checked Single-Breasted Tailored Fit Two-Piece Formal Suit</p>
+                                    <p>Black</p>
+                                    <p>In stock</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <h2 class="price mt-3 itemPrice">$  4500</h2>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <h1 class="add plus px-4 pb-2">+</h1>
+                                   <h3 class="quantity plus px-4 pt-2 ">1</h3>
+                                    <!-- <input type="text" name="number" id="quantity" class="form-control quantity "> -->
+                                    <h1 class="subBtn plus px-4 pb-2" >-</h1>
+                                </div>
+                            </div>
+                           </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-5 price">
+                    <h2>Price Details</h2>
+                    <hr class="mb-5">
+                    <div class="d-flex justify-content-between ">
+                     <div class="d-flex">
+                        <h4>Price </h4>
+                        
+                     </div>
+                     <h4  id="subTotal">$  4500</h4>
+                    </div>
+
+                    <div class="d-flex justify-content-between my-3">
+                        
+                           <h4>Product Discount</h4>
+                           <h4 id="discount">$   45</h4>
+                       </div>
+                       <div class="d-flex justify-content-between my-3">
+                        
+                        <h4>Delivery Charges</h4>
+                        <h4 id="delivery">$   0</h4>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="d-flex justify-content-between my-3">
+                        <h4 class="fw-bold" >TOTAL</h4>
+                        <h4 id="totalPrice">$  4455</h4>
+                    </div>
+                    <div class="button d-flex justify-content-end mt-5">
+                        <button class="btn btn-large btn-dark px-5 py-2 fs-3 b">Confirm</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

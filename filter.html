@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+
+    <!-- --------------------------header------------------------------------------ -->
+    <div class="container-fluid header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-1">
+                    <div class="logo">
+                        <img src="public/images/logo.png" alt="logo"class="img-fluid logo">
+                    </div>
+                </div>
+                <div class="col-md-6 mx-4">
+                    <input type="search"name="search" id="search"placeholder="Search"onkeyup=searchItems()>
+                </div>
+                <div class="col-md-1 mr">
+                    <div class="d-flex gap-3">
+                        <img src="public/images/user.svg" alt="user" class="img-fluid">
+                        <h4 class="h4 mt-2">Account</h4>
+                    </div>
+                </div>
+                <div class="col-md-1 mr">
+                    <div class="d-flex gap-3">
+                        <img src="public/images/heart.svg" alt="user" class="img-fluid">
+                        <h4 class="h4 mt-2">Wishlist</h4>
+                    </div>
+                </div>
+                <div class="col-md-1 mr">
+                    <div class="d-flex gap-3">
+                        <img src="public/images/shopping-cart.svg" alt="user" class="img-fluid">
+                        <h4 class="h4 mt-2">Cart</h4>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------menulist-------------------------------------- -->
+    <div class="container-fluid menu-list">
+        <div class="container">
+            <div class="d-flex justify-content-between pt-4 ">
+                <div class="top-offers m-auto text-center  text-light">
+                   
+                     <h5 >Top Offers</h5>
+                </div>
+                <div class="top-offers m-auto text-center text-light">
+       
+                     <h5 class="text-dark">Men</h5>
+                </div>
+                <div class="top-offers m-auto text-center text-light">
+               
+                     <h5>Women</h5>
+                </div>
+                <div class="top-offers m-auto text-center text-light">
+          
+                     <h5>Boys</h5>
+                </div>
+                <div class="top-offers m-auto text-center text-light">
+                  
+                     <h5>Girls</h5>
+                </div>
+                <div class="top-offers m-auto text-center text-light">
+                   
+                     <h5>Couples</h5>
+                </div>
+
+            </div>
+
+        </div>       
+    </div>
+<!-- 
+    -------------------------filter-body----------------------------------------- -->
+
+    <div class="container-fluid product">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="filter">
+                    <div class="d-flex justify-content-between my-3">
+                        <h3>FILTERS</h3>
+                        <h6 class="pt-2">Clear All</h6>
+                    </div>
+                     <hr>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Categories
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                
+                                    <div class="form-radio">
+                                        <input type="checkbox"class="check-item">
+                                        <label for="T-Shirts" class="px-3 lebel-item">T-Shirts</label>
+                                    </div>
+                                    <div class="form-radio">
+                                        <input type="checkbox"class="check-item">
+                                        <label for="Jackets" class="px-3 lebel-item">Jackets</label>
+                                    </div>
+                                    <div class="form-radio">
+                                        <input type="checkbox"class="check-item">
+                                        <label for="Suits" class="px-3 lebel-item">Suits</label>
+                                    </div>
+                                    <div class="form-radio">
+                                        <input type="checkbox"class="check-item">
+                                        <label for="Panjabi" class="px-3 lebel-item">Panjabi</label>
+                                    </div>
+                                    <div class="form-radio">
+                                        <input type="checkbox"class="check-item">
+                                        <label for="Track Pants" class="px-3 lebel-item">Track Pants</label>
+                                    </div>
+                                    <div class="form-radio">
+                                        <input type="checkbox"class="check-item">
+                                        <label for="Shoes" class="px-3 lebel-item">Shoes</label>
+                                    </div>
+                               
+                            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Brands
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-radio">
+                                    <input type="checkbox"class="brand-name">
+                                    <label for="Raymond" class="px-3 brand">Raymond</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox"class="brand-name">
+                                    <label for="Adidas" class="px-3 brand">Adidas</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox"class="brand-name">
+                                    <label for="Puma" class="px-3 brand">Puma</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox"class="brand-name">
+                                    <label for="Nike" class="px-3 brand">Nike</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox"class="brand-name">
+                                    <label for="Allen Solly" class="px-3 brand">Allen Solly</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox"class="brand-name">
+                                    <label for="Relience" class="px-3 brand">Relience</label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Price
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-radio">
+                                    <input type="checkbox">
+                                    <label for="250" class="px-3"> < 250 </label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox">
+                                    <label for="250 - 500" class="px-3">250 - 500</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox">
+                                    <label for="500 - 1000" class="px-3">500 - 1000</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox">
+                                    <label for="1000 - 2000" class="px-3">1000 - 2000</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox">
+                                    <label for="2000 - 3000" class="px-3">2000 - 3000</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="checkbox">
+                                    <label for="3000 >" class="px-3">3000 ></label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-3 my-4">
+                                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                              <li class="breadcrumb-item active" aria-current="page">Men</li>
+                                              <li class="breadcrumb-item active" aria-current="page">Kurtas</li>
+                                            </ol>
+                                          </nav>
+                                    </div>
+                                    <h1 class="men-heading">Men Fashions</h1>
+                                    
+                                </div>
+                                
+        <div class="card-group ">
+           <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+                <img src="public/images/card1.png" class="card-img-top" alt="card1">
+                <div class="card-body  c-b">
+                  <div class="d-flex justify-content-between">
+                      <h5 class="card-title text-left content1">Raymond</h5>
+                      <h5 class="card-title text-left content">Stylist Suit</h5>
+                  </div>
+                
+               <div class="d-flex justify-content-between pt-4">
+                  <h5>$  <span>5500.00</span></h5>
+  <img src="public/images/shopping-cart.svg" alt="cart">
+  
+               </div>
+                </div>
+                
+              </div>
+           </div>
+           <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/car2.png" class="card-img-top" alt="card2">
+              <div class="card-body c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">Relience</h5>
+                    <h5 class="card-title text-left content"> Panjabi</h5>
+                </div>
+          <div class="d-flex justify-content-between pt-4">
+<h5>$  <span>150.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+          </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/card-3.png" class="card-img-top" alt="card3">
+              <div class="card-body  c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">Nike</h5>
+                    <h5 class="card-title text-left content">Jackets</h5>
+                </div>
+         <div class="d-flex justify-content-between pt-4">
+<h5>$  <span>3500.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+         </div>
+              </div>
+            </div> 
+            </div>
+          </div>
+
+          <div class="card-group ">
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/track.png" class="card-img-top" alt="card1">
+              <div class="card-body  c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">adidas</h5>
+                    <h5 class="card-title text-left content">Trackpants</h5>
+                </div>
+              
+             <div class="d-flex justify-content-between pt-4">
+                <h5>$  <span>5500.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+
+             </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/Tshirt.png" class="card-img-top" alt="card2">
+              <div class="card-body c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">Adidas</h5>
+                    <h5 class="card-title text-left content"> T-Shirts</h5>
+                </div>
+          <div class="d-flex justify-content-between pt-4">
+<h5>$  <span>150.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+          </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/suit.png" class="card-img-top" alt="card3">
+              <div class="card-body  c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">Raymond</h5>
+                    <h5 class="card-title text-left content">Suits</h5>
+                </div>
+         <div class="d-flex justify-content-between pt-4">
+<h5>$  <span>3500.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+         </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="card-group  mb-5">
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/jacket.png" class="card-img-top" alt="card1">
+              <div class="card-body  c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1"> Puma</h5>
+                    <h5 class="card-title text-left content">Jackets</h5>
+                </div>
+              
+             <div class="d-flex justify-content-between pt-4">
+                <h5>$  <span>955.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+
+             </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/panjabi2.png" class="card-img-top" alt="card2">
+              <div class="card-body c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">Relience</h5>
+                    <h5 class="card-title text-left content"> Panjabi</h5>
+                </div>
+          <div class="d-flex justify-content-between pt-4">
+<h5>$  <span>63200.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+          </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-card">
+            <div class="card mt-5 c">
+              <img src="public/images/trackpant.png" class="card-img-top" alt="card3">
+              <div class="card-body  c-b">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left content1">Allen Solly</h5>
+                    <h5 class="card-title text-left content">Track Pant</h5>
+                </div>
+         <div class="d-flex justify-content-between pt-4">
+<h5>$  <span>2200.00</span></h5>
+<img src="public/images/shopping-cart.svg" alt="cart">
+         </div>
+              </div>
+            </div>
+            </div>
+          </div>
+    
+    
+                         </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ----------------------------footer------------------------------- -->
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="d-flex justify-content-between m">
+                <div class="about mt-5 my-5">
+                    <h3>ABOUT</h3>
+                    <h4>Contact Us</h4>
+                    <h4>About Us</h4>
+                    <h4>Careers</h4>
+                    <h4>Stories</h4>
+                    <h4>Presss</h4>
+                    <h4>Whole Sale</h4>
+                </div>
+                <div class="shopping mt-5 my-5">
+                    <h3>ONLINE SHOPPING</h3>
+                    <h4>Top Offers</h4>
+                    <h4>Men</h4>
+                    <h4>Women</h4>
+                    <h4>Boys</h4>
+                    <h4>Girls</h4>
+                    <h4>Couples</h4>
+                </div>
+                <div class="policy mt-5 my-5">
+                    <h3>CONSUMER POLICY</h3>
+                    <h4>Cancellation & Returns</h4>
+                    <h4>Terms Of Use</h4>
+                    <h4>Security</h4>
+                    <h4>Privecy</h4>
+                    <h4>Site Map</h4>
+                    <h4>Epr Compilence</h4>
+                </div>
+                <div class="about mt-5 my-5">
+                    <h3>HELP</h3>
+                    <h4>Payments</h4>
+                    <h4>Shipping</h4>
+                    <h4>Return</h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid end">
+        <div class="container">
+         <div class="d-flex justify-content-between">
+            <h5 class="">urgifts© 2023 Privacy Policy</h5>
+            <div class="img-social d-flex gap-3">
+                <img src="public/images/visa.png" alt="visa"class="img-fluid ">
+                <img src="public/images/paytm.png" alt="visa"class="img-fluid ">
+                <img src="public/images/google-pay.png" alt="visa"class="img-fluid ">
+            </div>
+         </div>
+           
+    
+    
+           
+        </div>
+    </div>
+
+
+
+
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>

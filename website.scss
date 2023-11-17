@@ -1,0 +1,147 @@
+.header{
+    height: 110px;
+    background: #FEFDDD;
+    #search{
+        width: 100%;
+        border-radius: 6px;
+        border: 0.5px solid #F26721;
+        background: #FFF;
+        margin-top: 5.5%;
+    
+    }
+    .mr{
+        margin-top: 2%;
+    }
+    h4{
+        color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+}
+.menu-list{
+    height: 140px;
+    background: rgba(255, 202, 175, 0.36);
+    h6{
+        color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+}
+.banner{
+    height: auto;
+    background-color: #FEFDDD;
+    img{
+    object-fit: contain;
+    }
+}
+.sale{
+    height: 150px;
+    background: #FEFDDD;
+}
+.top-offer{
+    height: auto;
+    h1{
+        color: #77123E;
+font-family: Merienda;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
+}
+
+c{
+     background: #FEFDDD;
+     img{
+        width: 80%;
+        margin: 5%;
+     }
+    .card-body{
+        background: #FEFDDD;
+    }
+    .c-b{
+        span{
+            color: #F26721;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+        }
+    }
+   
+}
+
+.card.mt-5.c {
+    background: #FEFDDD;
+}
+img.card-img-top {
+    padding: 1rem;
+}
+.card-body.c-b {
+    background: #FEFDDD;
+}
+
+.couple{
+    height: 100vh;
+    background-color: #FD3469;
+    background-image: url(public/images/couple-fashion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+h1{
+   font-family: Merienda;
+font-size: 54px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 8%;
+}
+.couple-text{
+    color: #FFF500;
+font-family: Merienda;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 4%;
+}
+img{
+    width: 35%;
+}
+.shop{
+    margin-top: 2%;
+    margin-left: 14%;
+    
+}
+}
+.footer{
+    height: auto;
+    background: #FEFDDD;
+    .m{
+margin-top: 5%;
+    }
+    h3{
+        color: #000;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+    h4{
+        color: #000;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+}

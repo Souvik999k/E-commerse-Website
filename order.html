@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container-fluid heading">
+        <div class="container">
+            
+                <h1 class="heading fs-2 fw-3 text-light py-4">Order Details</h1>
+              
+        </div>
+    </div>
+
+    <div class="container-fluid cart">
+        <div class="container">
+           
+            <div class="row mt-5 justify-content-between">
+                <div class="col-md-6">
+                    <h2>Personal Details</h2>
+                    <hr>
+                    <div class="d-flex gap-3">
+                        <h4>Name :</h4>
+                        <h4>Rohit Das</h4>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h4>Address :</h4>
+                        <input type="text" name="address" id=""class="mx-3">
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h4>Phone :  </h4>
+                        <input type="text" name="address" id=""class="mx-3">
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h4>Landmark :</h4>
+                        <input type="text" name="address" id=""class="mx-3">
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <h2>Personal Details</h2>
+                    <hr>
+                    <div class="form-check my-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label " for="flexRadioDefault1">
+                        Cash on delivery
+                        </label>
+                      </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                         UPI
+                        </label>
+                      </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                       EMI
+                        </label>
+                      </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                         Net Banking
+                        </label>
+                      </div>
+                      <div class="form-check my-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Credit/Devid ATM card
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="order d-flex justify-content-center mt-5">
+                <button class="btn btn-large btn-large btn-dark px-4 py2 o">Order Now</button>
+            </div>
+          
+
+        </div>
+    </div>
+
+
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>

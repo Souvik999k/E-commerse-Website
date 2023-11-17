@@ -1,0 +1,92 @@
+.login{
+    height: 100vh;
+    background-color: #FEFDDD; 
+    position: relative;
+    .image{
+        width: 50%;
+       img{
+        object-fit: cover;
+        height: auto;
+       }
+    }
+   .bg{
+    width: 50%;
+    background-color: #FEFDDD; 
+   }
+}
+
+.middle{
+       margin-top: 5%;
+position: absolute;
+top: 0;
+left: 8%;
+       
+       .form{
+        background-color: #FEFDDD; 
+           h2{
+            color: #000;
+font-family: Inter;
+font-size: 45px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 3%;
+           }
+           .trend{
+            color: #F26721;
+font-family: Inter;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-left: 3%;
+           }
+           img{
+            width: 20%;
+     
+       }
+       }
+
+
+.form-control,.form-control:focus{
+    outline: 0px transparent;
+    box-shadow: 20px;
+    position: relative;
+}
+span{
+    display: none;
+}
+.i1{
+    height: 200px;
+
+}
+
+.d1{
+    width: 10px;
+    height: 5px;
+    background-color: black;
+}
+#input1.invalid,#input2.invalid{
+    border-bottom:1px solid red ;
+}
+.height{
+    height: 100vh;
+}
+.eye-on,.eye-off{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+.email{
+    display: none;
+}
+
+.signin{
+    background: #F26721;
+    font-family: Inter;
+font-size: 24px;
+}
+.b1{
+    border-bottom: 4px solid #77123E;
+}
+}

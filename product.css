@@ -1,0 +1,129 @@
+.header {
+  height: 110px;
+  background: #FEFDDD;
+}
+.header #search {
+  width: 100%;
+  border-radius: 6px;
+  border: 0.5px solid #F26721;
+  background: #FFF;
+  margin-top: 5.5%;
+}
+.header .mr {
+  margin-top: 2%;
+}
+.header h4 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-list {
+  height: 90px;
+  background: #F26721;
+}
+.menu-list h6 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.heading {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sub {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.price {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.img-c {
+  position: relative;
+  right: 50%;
+}
+.img-c .img-c1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.img-c .img-c1 .img-c2 {
+  position: absolute;
+  top: 0;
+  left: 60%;
+}
+
+.size {
+  height: 70px;
+  background: #D9D9D9;
+}
+
+.buy-now {
+  background: #F26721;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cart {
+  background: #FFA800;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-d {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.review {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}/*# sourceMappingURL=product.css.map */

@@ -1,0 +1,86 @@
+.login {
+  height: 100vh;
+  background-color: #FEFDDD;
+  position: relative;
+}
+.login .image {
+  width: 50%;
+}
+.login .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.login .bg {
+  width: 50%;
+  background-color: #FEFDDD;
+}
+
+.middle {
+  margin-top: 5%;
+  position: absolute;
+  top: 0;
+  left: 8%;
+}
+.middle .form {
+  background-color: #FEFDDD;
+}
+.middle .form h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 3%;
+}
+.middle .form .trend {
+  color: #F26721;
+  font-family: Inter;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 3%;
+}
+.middle .form img {
+  width: 20%;
+}
+.middle .form-control, .middle .form-control:focus {
+  outline: 0px transparent;
+  box-shadow: 20px;
+  position: relative;
+}
+.middle span {
+  display: none;
+}
+.middle .i1 {
+  height: 200px;
+}
+.middle .d1 {
+  width: 10px;
+  height: 5px;
+  background-color: black;
+}
+.middle #input1.invalid, .middle #input2.invalid {
+  border-bottom: 1px solid red;
+}
+.middle .height {
+  height: 100vh;
+}
+.middle .eye-on, .middle .eye-off {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+.middle .email {
+  display: none;
+}
+.middle .signin {
+  background: #F26721;
+  font-family: Inter;
+  font-size: 24px;
+}
+.middle .b1 {
+  border-bottom: 4px solid #77123E;
+}/*# sourceMappingURL=style.css.map */
